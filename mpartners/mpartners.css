@@ -1,0 +1,112 @@
+:root {
+    --text-color: black;
+    --background-color: papayawhip;
+    --accent-color: red;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 1200px;
+    /* font-family: 'Source Sans Pro', 산세리프; */
+    /* font-size: 12px; */
+    margin: 0 auto;
+    border: 1px solid rgb(78, 78, 78);
+    /* top, left and right, bottom */
+    padding: 1.5em 2% 1em;
+    background-color: var(--background-color);
+}
+
+header {
+    /* font-size: 1em; */
+    margin: 0;
+    border: 1px solid rgb(78, 78, 78);
+    /* top and bottom */
+    padding: 3% 1%;
+    background-color: beige;
+    /* display: flex; */
+    display: flex;
+    /* flex-direction: row; 기본값 */
+    flex-wrap: wrap;
+    /* Content 정열 방법, flex-start, flex-end */
+    justify-content: center;
+    position: sticky;
+}
+
+.logo {
+    margin: 0;
+    border: 1px solid rgb(78, 78, 78);
+    /* All sides */
+    padding: 1em 2px;
+    background-color: none;
+    /* position: static; 기본값 */
+    /* position: absolute; position: fixed; position: sticky; */
+    position: relative;
+}
+
+.small {
+    font-size: 1.5em;
+    margin: 40px;
+    border: 1px solid rgb(78, 78, 78);
+    /* top and bottom */
+    padding: 2% 2%;
+    background-color: white;
+}
+
+nav {
+    margin: 0;
+    border: 1px solid rgb(78, 78, 78);
+    /* top and bottom */
+    padding: 2% 2%;
+    background-color: beige;
+    display: inline-block;
+}
+
+main {
+    margin: 0;
+    border: 1px solid rgb(78, 78, 78);
+    /* top and bottom */
+    padding: 2% 2%;
+    background-color: rgb(234, 241, 247);
+    display: flex;
+}
+
+article {
+    margin: 0;
+    border: 1px solid rgb(78, 78, 78);
+    /* top and bottom */
+    padding: 2% 2%;
+    background-color: rgb(234, 241, 247);
+}
+
+#slideshow {
+    width: 500px;
+    height: 300px;
+    background-color: #ccc;
+    position: relative;
+    text-align: center;
+    /* 가운데 정렬 추가 */
+    display: flex;
+    /* 추가 */
+    justify-content: center;
+    /* 추가 */
+    align-items: center;
+    /* 추가 */
+}
+
+#slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 추가 */
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: baseline;
+    align-content: center;
+    color: var(--text-color);
+    border: 2px solid black;
+}
